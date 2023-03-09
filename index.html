@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página dos Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+  </head>
+  
+  <body>
+    <header>
+      <div class="cabecalho">
+        <a class="logo" href="https://www.egp.ce.gov.br/" target="_blank" rel="noopener noreferrer"><img src="https://www.egp.ce.gov.br/wp-content/uploads/sites/8/2023/03/logo-egpce-branca.png" alt=""></a>
+      </div>  
+    </header>
+    <main>
+      <div class="container-fluid" style="margin: 45px 0;">
+        <h1 class="text-center">Página dos Cards</h1><br>
+  
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-md-10">
+            <div class="filtro">
+              <h4>Escolha por qual eixo temático quer filtrar.</h4><br>
+  
+              <button id="eixoTodos" class="btn btn-filter ativo">TODOS</button>
+              <button id="eixoGDP" class="btn btn-filter">GESTÃO E DESENVOLVIMENTO DE PESSOAS</button>
+              <button id="eixoCI" class="btn btn-filter">CONTROLE INTERNO</button>
+              <button id="eixoAF" class="btn btn-filter">ADMINISTRATIVO – FINANCEIRO</button>
+              <button id="eixoDS" class="btn btn-filter">DESENVOLVIMENTO SUSTENTÁVEL</button>
+              <button id="eixoMO" class="btn btn-filter">MODERNIZAÇÃO ORGANIZACIONAL</button>
+              <button id="eixoP" class="btn btn-filter">PREVIDÊNCIA</button>
+              <button id="eixoPOF" class="btn btn-filter">PLANEJAMENTO, ORÇAMENTO E FINANÇAS</button>
+              <button id="eixoTIC" class="btn btn-filter">TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO</button>                
+            </div><br><br>
+  
+            <div class="cards_curso">
+              <div class="card_curso box-card gdp">
+                <!-- <img src="https://picsum.photos/500/300/?image=10" alt="teste"> -->
+                <div class="card_capa">
+                  <h1>ATENDIMENTO AO PÚBLICO</h1>
+                  <p>20h/a</p>
+                </div>
+                <div class="card_conteudo">
+                  <!-- <h1>ATENDIMENTO AO PÚBLICO - 20h/a</h1> -->
+                  <p><b>Inscrição:</b> a partir de 11/01/2023</p>
+                  <p><b>Realização:</b> a partir de 11/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Promover o acesso às informações que favoreçam a compreensão da importância do bom atendimento ao cidadão pelos servidores públicos, apresentando aspectos referentes ao serviço público e ao atendimento.</p>
+                  <div class="btn_conteudo">
+                    <button id="curso1" class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <!-- <img src="https://picsum.photos/500/300/?image=11" alt="teste"> -->
+                <div class="card_capa">
+                  <h1>ATUALIZAÇÃO EM GESTÃO PÚBLICA PARA RESULTADOS</h1>
+                  <p>60h/a</p>
+                </div>
+                <div class="card_conteudo">
+                  <!-- <h1>ATUALIZAÇÃO EM GESTÃO PÚBLICA PARA RESULTADOS - 60h/a</h1> -->
+                  <p><b>Inscrição:</b> a partir de 30/01/2023</p>
+                  <p><b>Realização:</b> a partir de 30/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Favorecer a compreensão do conceito de Gestão para Resultados aplicado na implementação das políticas públicas, enfatizando avanços, desafios, status atual e próximos passos desse modelo de gestão no Estado do Ceará.</p>
+                  <div class="btn_conteudo">
+                    <button id="curso2" class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card tic">
+                <!-- <img src="https://picsum.photos/500/300/?image=2" alt="teste"> -->
+                <div class="card_capa">
+                  <h1>CALC INTERMEDIÁRIO E AVANÇADO</h1>
+                  <p>30h/a</p>
+                </div>
+                <div class="card_conteudo">
+                  <!-- <h1>CALC INTERMEDIÁRIO E AVANÇADO - 30h/a</h1> -->
+                  <p><b>Inscrição:</b> a partir de 16/01/2023</p>
+                  <p><b>Realização:</b> a partir de 16/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Apresentar os conceitos intermediários e avançados iniciais, acerca de planilhas eletrônicas, proporcionando aos participantes o desenvolvimento de habilidades para sua criação e manipulação, por meio da utilização do Libreoffice Calc.</p>
+                  <div class="btn_conteudo">
+                    <button id="curso3" class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card tic">
+                <img src="https://picsum.photos/500/300/?image=5" alt="teste">
+                <div class="card_conteudo">
+                  <h1>CALC PARA INICIANTES - 30h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 11/01/2023</p>
+                  <p><b>Realização:</b> a partir de 11/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Proporcionar ao participante uma visão básica de alguns recursos do LibreOffice Calc por meio de exemplos práticos que possam ser utilizados em seu cotidiano pessoal e profissional.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card mo">
+                <img src="https://picsum.photos/500/300/?image=5" alt="teste">
+                <div class="card_conteudo">
+                  <h1>CARTOGRAFIA BÁSICA E INTRODUÇÃO AO GEOPROCESSAMENTO COM QGIS - 80h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 23/01/2023</p>
+                  <p><b>Realização:</b> a partir de 23/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Treinar os servidores da Superintendência Estadual do Meio Ambiente em sistema de informação geográfica visando sua aplicabilidade na execução das atividades próprias de licenciamento e fiscalização no órgão ambiental.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card af">
+                <img src="https://picsum.photos/500/300/?image=5" alt="teste">
+                <div class="card_conteudo">
+                  <h1>COMO VENDER PARA A ADMINISTRAÇÃO PÚBLICA - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 23/01/2023</p>
+                  <p><b>Realização:</b> a partir de 23/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Proporcionar conhecimentos básicos, na modalidade a distância, aos empreendedores de pequenos negócios e demais interessados no processo de compras governamentais, para o entendimento sobre como identificar oportunidades de negócio e se preparar para participar das contratações da Administração Pública.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card mo">
+                <img src="https://picsum.photos/500/300/?image=11" alt="teste">
+                <div class="card_conteudo">
+                  <h1>CONTROLE SOCIAL - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 16/01/2023</p>
+                  <p><b>Realização:</b> a partir de 16/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Apresentar conceitos de controle social e os principais instrumentos relacionados ao exercício desse direito.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card tic">
+                <img src="https://picsum.photos/500/300/?image=2" alt="teste">
+                <div class="card_conteudo">
+                  <h1>DESIGN DE EXPERIÊNCIA DO USUÁRIO: O QUE É UX? - 20</h1>
+                  <p><b>Inscrição:</b> a partir de 23/01/2023</p>
+                  <p><b>Realização:</b> a partir de 23/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Apresentar o termo UX (“Experiência do Usuário”), discutir as áreas de estudo relacionadas, apresentar uma breve história de UX, questionar quem é o usuário e entender os benefícios da aplicação de design UX.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card tic">
+                <img src="https://picsum.photos/500/300/?image=5" alt="teste">
+                <div class="card_conteudo">
+                  <h1>DESIGN DE EXPERIÊNCIA DO USUÁRIO: USABILIDADE NA PRÁTICA - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 30/01/2023</p>
+                  <p><b>Realização:</b> a partir de 30/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Entender o que é usabilidade, conhecer as heurísticas de Nielsen e aprender como avaliar usabilidade.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=11" alt="teste">
+                <div class="card_conteudo">
+                  <h1>DIREITOS, DEVERES E RESPONSABILIDADES DO SERVIDOR PÚBLICO ESTADUAL - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 11/01/2023</p>
+                  <p><b>Realização:</b> a partir de 11/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Proporcionar aos servidores públicos atualização acerca de seus direitos, responsabilidades e deveres.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card af">
+                <img src="https://picsum.photos/500/300/?image=10" alt="teste">
+                <div class="card_conteudo">
+                  <h1>EDUCAÇÃO FISCAL E CIDADANIA - 40h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 16/01/2023</p>
+                  <p><b>Realização:</b> a partir de 16/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Capacitar os participantes sobre os temas abordados pelo Programa de Educação Fiscal, permitindo a conscientização sobre a função socioeconômica do tributo e sua responsabilidade no monitoramento da aplicação dos recursos públicos, fortalecendo, assim, a cidadania fiscal no âmbito da gestão pública.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card pof">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>ELABORAÇÃO E GESTÃO DE INDICADORES PARA GESTÃO PÚBLICA - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 16/01/2023</p>
+                  <p><b>Realização:</b> a partir de 16/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Mostrar os tipos de indicadores que podemos implantar no nosso modelo de gestão organizacional.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card ci">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>ÉTICA E SERVIÇO PÚBLICO - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 11/01/2023</p>
+                  <p><b>Realização:</b> a partir de 11/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Contribuir para divulgação e promoção da ética nos órgãos e entidades do Poder Executivo Estadual, fornecendo subsídios para atuação de servidores, instruindo acerca de regulamentos, processos e atividades relacionadas à temática.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card ci">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>GESTÃO DE MATERIAIS PERMANENTES (BENS MÓVEIS) - 100h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 30/01/2023</p>
+                  <p><b>Realização:</b> a partir de 30/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Compreender as técnicas usuais de gestão de materiais permanentes, assim como a legislação vigente e sua aplicabilidade no cotidiano operacional da administração pública estadual.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card ci">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>GESTÃO DE SUPRIMENTOS (MATERIAL DE CONSUMO) - 60h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 23/01/2023</p>
+                  <p><b>Realização:</b> a partir de 23/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Compreender as técnicas usuais de Gestão de Suprimentos, assim como a Legislação vigente e sua aplicabilidade no cotidiano operacional da Administração Pública Estadual.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>GESTÃO DO TEMPO - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 06/02/2023</p>
+                  <p><b>Realização:</b> a partir de 06/02/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Organizar melhor o seu tempo no curto, médio e longo prazo.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card mo">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>GESTÃO POR PROCESSOS COM FOCO EM RISCOS - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 06/02/2023</p>
+                  <p><b>Realização:</b> a partir de 06/02/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Proporcionar uma visão geral sobre o gerenciamento de processos e de riscos, no âmbito da gestão pública.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card mo">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>GUIA METODOLÓGICO DE FORMULAÇÃO DAS AGENDAS ESTRATÉGICAS SETORIAIS - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 30/01/2023</p>
+                  <p><b>Realização:</b> a partir de 30/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Desdobrar e organizar a Estratégia de Desenvolvimento de Longo Prazo do Estado em planos setoriais.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>INTELIGÊNCIA EMOCIONAL E TRABALHO EM EQUIPE - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 16/01/2023</p>
+                  <p><b>Realização:</b> a partir de 16/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Compreender aspectos mais gerais da Inteligência Emocional. Entender sua conceituação e os diversos tipos de inteligência e como a Inteligência Emocional se destaca como habilidade essencial para todos os indivíduos.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>LÍNGUA PORTUGUESA - TEXTOS E A CONSTRUÇÃO DA TEXTUALIDADE - 40h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 06/02/2023</p>
+                  <p><b>Realização:</b> a partir de 06/02/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Possibilitar ao participante o desenvolvimento da capacidade da interpretação e produção de textos.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>LÍNGUA PORTUGUESA: NOÇÕES GRAMATICAIS - 40h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 23/01/2023</p>
+                  <p><b>Realização:</b> a partir de 23/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Possibilitar ao participante a revisão de noções gramaticais, visando favorecer a atualização de conhecimentos da língua portuguesa e o desenvolvimento da comunicação oral e escrita.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>LÍNGUA PORTUGUESA: REDAÇÃO OFICIAL - 40h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 30/01/2023</p>
+                  <p><b>Realização:</b> a partir de 30/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Instrumentalizar o participante para o desenvolvimento de habilidades de uso da linguagem formal e para a produção da redação oficial.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card mo">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>NOÇÕES DE DIREITO CONSTITUCIONAL E ADMINISTRATIVO - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 23/01/2023</p>
+                  <p><b>Realização:</b> a partir de 23/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Apresentar uma sumária conceituação de Constituição, suas concepções, características e classificações, bem como apontar a evolução histórica das Constituições brasileiras e demonstrar a estrutura da atual Carta Magna vigente em nosso país.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card pof">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>PLANEJAMENTO NO SETOR PÚBLICO - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 11/01/2023</p>
+                  <p><b>Realização:</b> a partir de 11/01/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Ampliar e desenvolver conhecimentos sobre as técnicas, métodos e ferramentas disponibilizados para a elaboração e gestão de instrumentos de planejamento governamentais, na ótica da implementação das políticas públicas no Governo do Estado do Ceará, tendo como direcionadora a legislação específica.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_curso box-card gdp">
+                <img src="https://picsum.photos/500/300/?image=14" alt="teste">
+                <div class="card_conteudo">
+                  <h1>TÉCNICAS DE NEGOCIAÇÃO DE CONFLITOS - 20h/a</h1>
+                  <p><b>Inscrição:</b> a partir de 06/02/2023</p>
+                  <p><b>Realização:</b> a partir de 06/02/2023</p>
+                  <p class="objetivo"><b>Objetivo: </b>Expor ao aluno algumas técnicas de negociação aplicáveis, bem como os conceitos, os principais tipos de conflitos, o conceito de negociação na visão organizacional e as etapas do Processo de Negociação.</p>
+                  <div class="btn_conteudo">
+                    <button class="btn_objetivo">Objetivo</button>
+                    <button class="btn_inscrevase">Inscreva-se</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- <div class="box_content_flip box-card gdp" id="box_content">
+              <div class="face box_front">
+                <img src="https://picsum.photos/500/300/?image=10">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                <button class="card_btn" id="btn_flip_virar">Leia Mais</button>
+              </div>
+              <div class="face box_back">
+                <img src="https://picsum.photos/500/300/?image=2">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo ofDemo of pixel perfect pure CSS simple responsive card grid layoutDemo of pixel perfect pure CSS simple responsive card grid layoutDemo of pixel perfect pure CSS simple responsive card grid layoutDemo of pixel perfect pure CSS simple responsive card grid layoutDemo of pixel perfect pure CSS simple responsive card grid layout pixel perfect pure CSS simple responsive card grid layout</p>
+                <button class="card_btn" id="btn_flip_voltar">Leia Mais</button>
+              </div>
+            </div> -->                
+  
+          </div>
+          <div class="col-1"></div>
+        </div>
+        
+      </div>
+    </main>
+    <footer>
+      <div class="rodape">
+        <div class="logo">
+          <a href="https://www.egp.ce.gov.br/" target="_blank" rel="noopener noreferrer"><img src="https://www.egp.ce.gov.br/wp-content/uploads/sites/8/2023/03/logo-egpce-branca.png" alt=""></a>
+        </div>
+        <div class="endereco">
+          <p class="footer_titulo">SEDE DA EGPCE</p>
+          <p class="footer_texto">AV. GENERAL AFONSO ALBUQUERQUE LIMA, S/N - CAMBEBA<br>FORTALEZA, CE.</p>
+          <p class="footer_texto">CEP: 60.822-325.</p>
+        </div>
+        <div class="horario">
+          <p class="footer_titulo">HORÁRIO DE ATENDIMENTO</p>
+          <p class="footer_texto">08:00 ÀS 12:00 HORAS<br>13:00 ÀS 17:00 HORAS</p>
+        </div>
+        <div class="contato">
+          <p class="footer_titulo">CONTATO</p>
+          <p class="footer_texto">(85) 3101-3844<br>(85) 3101-3832</p>
+        </div>
+      </div>  
+    </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script defer src="script.js"></script>
+  </body>
+</html>
