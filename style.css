@@ -131,14 +131,20 @@ main {
 
   background: linear-gradient(to right, #204D37, #00853B 40%);
   color: white;
+  /* color: rgb(27, 27, 27); */
   border-radius: 10px 10px 0 0;
-
+  
   padding: 10px;
   height: 210px;
+
+  /* background: url("assets/imagem.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* opacity: 0.3; */
 }
 
 .card_capa h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .card_capa p {
