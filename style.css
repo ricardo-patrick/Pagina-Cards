@@ -124,6 +124,8 @@ main {
   border-radius: 10px 10px 0 0;
 }
 
+/* início --- capa dos cards */
+
 .card_capa {
   display: flex;
   flex-direction: column;
@@ -131,29 +133,21 @@ main {
 
   background: linear-gradient(to right, #204D37, #00853B 40%);
   color: white;
-  /* color: rgb(27, 27, 27); */
   border-radius: 10px 10px 0 0;
   
+  position: relative;
   padding: 10px;
   height: 210px;
-  
-  /* background: url("assets/imagem.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* opacity: 0.3; */
 }
 
-.desat.card_capa {
+.desat .card_capa {
   background: linear-gradient(to right, #7ea191, #98caaf 40%) !important;
 }
 
 .card_capa h1 {
   font-size: 1.7rem;
-}
-
-.card_capa p:last-child {
-  font-size: 1.2rem;
-  margin: 0;
+  
+  position: inherit;
 }
 
 .card_capa p:first-child {
@@ -162,29 +156,38 @@ main {
   background-color: #868686;
   border-radius: 5px;
   padding: 3px 5px;
+  
+  position: inherit;
+}
+
+.card_capa p:last-child {
+  font-size: 1.2rem;
+  margin: 0;
+  
+  position: inherit;
+}
+
+.imagem_capa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imagem_capa img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
 }
 
 .sem_turma {
   display: none;
 }
 
-@media (max-width: 1300px) {
-  .card_curso {
-    width: 30%;
-  }
-}
+/* fim --- capa dos cards */
 
-@media (max-width: 985px) {
-  .card_curso {
-    width: 48%;
-  }
-}
-
-@media (max-width: 535px) {
-  .card_curso {
-    width: 100%;    
-  }
-}
+/* início --- conteudo dos cards */
 
 .card_conteudo.desat{
   background: none !important;
@@ -214,10 +217,15 @@ main {
   margin-top: 10px;
 }
 
+/* fim --- conteudo dos cards */
+
+/* início --- botões dos cards */
+
 .btn_conteudo {
   display: flex;
+  flex-direction: row;
   gap: 10px;
-
+  
   margin-top: 20px;
 }
 
@@ -250,4 +258,91 @@ main {
 .desat.btn_inscrevase {
   background-color: #acacac !important;
   color: white !important;
+}
+
+/* fim --- botões dos cards */
+
+@media (max-width: 1300px) {
+  .card_curso {
+    width: 30%;
+  }
+}
+
+@media (max-width: 985px) {
+  .card_curso {
+    width: 48%;
+  }
+}
+
+@media (max-width: 535px) {
+  .card_curso {
+    width: 100%;    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card_capa2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: #818181;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  
+  position: relative;
+  padding: 10px;
+  height: 210px;
+}
+
+.card_capa2 h1 {
+  font-size: 1.7rem;
+  
+  position: inherit;
+}
+
+.card_capa2 p:last-child {
+  font-size: 1.2rem;
+  margin: 0;
+  
+  position: inherit;
+}
+
+.card_capa2 p:first-child {
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: #da1919;
+  border-radius: 5px;
+  padding: 3px 5px;
+  
+  position: inherit;
+}
+
+.desat.card_capa2 {
+  background: linear-gradient(to right, #7ea191, #98caaf 40%) !important;
+}
+
+.card_conteudo2 {
+  display: flex;
+  flex-direction: column;
+  
+  background: linear-gradient(to bottom left, #f59211 40%, #ce5e18 100%);
+  padding: 10px 10px 20px;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.card_conteudo2 p {
+  margin-bottom: 0px;
 }
