@@ -66,31 +66,48 @@ var objetivo = document.querySelectorAll('.objetivo');
 
 for (let y = 0; y < btnObjetivo.length; y++) {
     btnObjetivo[y].addEventListener('click', function(){
-
+        
         if (objetivo[y].style.display == '') {
             objetivo[y].style.display = 'block';
         } else {
             objetivo[y].style.display = '';       
         }
-
+        
     });
 }
 
 // -----------------------------------------
 
 // document.querySelectorAll("button").forEach( function(button) {    
-//     button.addEventListener("click", function(event) {
-//     const el = event.target || event.srcElement;
-//     const id = el.id;
-//     console.log(id);
-//   });  
-// });
-
-// var btnTestes = document.querySelectorAll("button");
-// btnTestes.forEach( function(button) {    
-//     button.addEventListener("click", function(event) {
-//         const el = event.target || event.srcElement;
-//         const id = el.id;
-//         console.log(id);
-//     });
-// });
+    //     button.addEventListener("click", function(event) {
+        //     const el = event.target || event.srcElement;
+        //     const id = el.id;
+        //     console.log(id);
+        //   });  
+        // });
+        
+        // var btnTestes = document.querySelectorAll("button");
+        // btnTestes.forEach( function(button) {    
+            //     button.addEventListener("click", function(event) {
+                //         const el = event.target || event.srcElement;
+                //         const id = el.id;
+                //         console.log(id);
+                //     });
+                // });
+                
+                // -----------------------------------------
+                
+var cardConteudo = document.querySelectorAll('.card_conteudo'); 
+var btnInscrevase = document.querySelectorAll('.btn_inscrevase'); 
+var cardCapa = document.querySelectorAll('.card_capa'); 
+var avisoTurma = document.querySelectorAll('.sem_turma'); 
+                
+for (let k = 0; k < btnObjetivo.length; k++) {
+    if (cardConteudo[k].classList.contains('desat')) {
+        cardConteudo[k].children[3].children[1].innerHTML = 'Desativado';
+        btnInscrevase[k].style.display = 'none';
+        avisoTurma[k].style.display = 'block';
+        cardCapa[k].classList.add('desat');
+    }
+}
+                

@@ -136,20 +136,36 @@ main {
   
   padding: 10px;
   height: 210px;
-
+  
   /* background: url("assets/imagem.jpg");
   background-repeat: no-repeat;
   background-size: cover; */
   /* opacity: 0.3; */
 }
 
+.desat.card_capa {
+  background: linear-gradient(to right, #7ea191, #98caaf 40%) !important;
+}
+
 .card_capa h1 {
   font-size: 1.7rem;
 }
 
-.card_capa p {
+.card_capa p:last-child {
   font-size: 1.2rem;
   margin: 0;
+}
+
+.card_capa p:first-child {
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: #868686;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.sem_turma {
+  display: none;
 }
 
 @media (max-width: 1300px) {
@@ -168,6 +184,11 @@ main {
   .card_curso {
     width: 100%;    
   }
+}
+
+.card_conteudo.desat{
+  background: none !important;
+  background-color: #868686 !important;
 }
 
 .card_conteudo {
@@ -218,9 +239,15 @@ main {
 .btn_inscrevase {
   background-color: #00853B;
   color: white;
+  display: block;
 }
 
 .btn_inscrevase:hover {
   background-color: #00682f;
   color: white;
+}
+
+.desat.btn_inscrevase {
+  background-color: #acacac !important;
+  color: white !important;
 }
