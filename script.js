@@ -97,17 +97,29 @@ for (let y = 0; y < btnObjetivo.length; y++) {
                 
                 // -----------------------------------------
                 
-var cardConteudo = document.querySelectorAll('.card_conteudo'); 
+var cardConteudo = document.querySelectorAll('.card_conteudo');
 var btnInscrevase = document.querySelectorAll('.btn_inscrevase'); 
 var cardCapa = document.querySelectorAll('.card_capa'); 
 var avisoTurma = document.querySelectorAll('.sem_turma'); 
-                
-for (let k = 0; k < btnObjetivo.length; k++) {
-    if (cardConteudo[k].classList.contains('desat')) {
-        cardConteudo[k].children[3].children[1].innerHTML = 'Desativado';
+
+for (let k = 0; k < cardConteudo.length; k++) {
+    if (cardConteudo[k].classList.contains('desat')){        
         btnInscrevase[k].style.display = 'none';
         avisoTurma[k].style.display = 'block';
         cardCapa[k].classList.add('desat');
+    }
+}
+
+var cardConteudo2 = document.querySelectorAll('.card_conteudo2');
+var btnInscrevase2 = document.querySelectorAll('.btn_inscrevase2'); 
+var cardCapa2 = document.querySelectorAll('.card_capa2'); 
+var avisoTurma2 = document.querySelectorAll('.sem_turma2'); 
+
+for (let v = 0; v < cardConteudo2.length; v++) {
+    if (cardConteudo2[v].classList.contains('desat')) {
+        btnInscrevase2[v].style.display = 'none';
+        avisoTurma2[v].style.display = 'block';
+        cardCapa2[v].classList.add('desat');
     }
 }
                 

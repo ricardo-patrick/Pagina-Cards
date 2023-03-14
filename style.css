@@ -140,7 +140,7 @@ main {
   height: 210px;
 }
 
-.desat .card_capa {
+.card_capa.desat {
   background: linear-gradient(to right, #7ea191, #98caaf 40%) !important;
 }
 
@@ -153,7 +153,7 @@ main {
 .card_capa p:first-child {
   width: max-content;
   font-size: 0.8rem;
-  background-color: #868686;
+  background-color: #d61111; 
   border-radius: 5px;
   padding: 3px 5px;
   
@@ -181,7 +181,7 @@ main {
   opacity: 0.2;
 }
 
-.sem_turma {
+.sem_turma, .sem_turma2 {
   display: none;
 }
 
@@ -244,20 +244,15 @@ main {
   background-color: #d6d6d6;
 }
 
-.btn_inscrevase {
+.btn_inscrevase, .btn_inscrevase2 {
   background-color: #00853B;
   color: white;
   display: block;
 }
 
-.btn_inscrevase:hover {
+.btn_inscrevase:hover, .btn_inscrevase2:hover {
   background-color: #00682f;
   color: white;
-}
-
-.desat.btn_inscrevase {
-  background-color: #acacac !important;
-  color: white !important;
 }
 
 /* fim --- botões dos cards */
@@ -319,18 +314,14 @@ main {
   position: inherit;
 }
 
-.card_capa2 p:first-child {
+.card_capa2 .sem_turma2 {
   width: max-content;
   font-size: 0.8rem;
-  background-color: #da1919;
+  background-color: #d61111;
   border-radius: 5px;
   padding: 3px 5px;
   
   position: inherit;
-}
-
-.desat.card_capa2 {
-  background: linear-gradient(to right, #7ea191, #98caaf 40%) !important;
 }
 
 .card_conteudo2 {
@@ -341,6 +332,11 @@ main {
   padding: 10px 10px 20px;
   color: white;
   border-radius: 0 0 10px 10px;
+}
+
+.card_conteudo2.desat{
+  background: none !important;
+  background-color: #868686 !important;
 }
 
 .card_conteudo2 p {
