@@ -1,3 +1,5 @@
+// filtros ------------------------------------
+
 var btntodos = document.getElementById('eixoTodos');
 var btngdp = document.getElementById('eixoGDP');
 var btnci = document.getElementById('eixoCI');
@@ -59,7 +61,7 @@ function eachBoxes(type, boxes) {
     }
 }
 
-// -----------------------------------------
+// objetivo -----------------------------------------
 
 var btnObjetivo = document.querySelectorAll('.btn_objetivo');
 var objetivo = document.querySelectorAll('.objetivo');
@@ -76,27 +78,8 @@ for (let y = 0; y < btnObjetivo.length; y++) {
     });
 }
 
-// -----------------------------------------
+// desativado ---------------------------------------
 
-// document.querySelectorAll("button").forEach( function(button) {    
-    //     button.addEventListener("click", function(event) {
-        //     const el = event.target || event.srcElement;
-        //     const id = el.id;
-        //     console.log(id);
-        //   });  
-        // });
-        
-        // var btnTestes = document.querySelectorAll("button");
-        // btnTestes.forEach( function(button) {    
-            //     button.addEventListener("click", function(event) {
-                //         const el = event.target || event.srcElement;
-                //         const id = el.id;
-                //         console.log(id);
-                //     });
-                // });
-                
-                // -----------------------------------------
-                
 var cardConteudo = document.querySelectorAll('.card_conteudo');
 var btnInscrevase = document.querySelectorAll('.btn_inscrevase'); 
 var cardCapa = document.querySelectorAll('.card_capa'); 
@@ -122,4 +105,24 @@ for (let v = 0; v < cardConteudo2.length; v++) {
         cardCapa2[v].classList.add('desat');
     }
 }
+
+
+// document.querySelectorAll("button").forEach( function(button) {    
+    //     button.addEventListener("click", function(event) {
+        //     const el = event.target || event.srcElement;
+        //     const id = el.id;
+        //     console.log(id);
+        //   });  
+        // });
+        
+        // var btnTestes = document.querySelectorAll("button");
+        // btnTestes.forEach( function(button) {    
+            //     button.addEventListener("click", function(event) {
+                //         const el = event.target || event.srcElement;
+                //         const id = el.id;
+                //         console.log(id);
+                //     });
+                // });
+                
+                // -----------------------------------------
                 
